@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <header class="header container" id="sect0">
+    <div class="header__inner">
+
+        <!-- ЛОГОТИП -->
+        <div class="logo">
+            <a href="https://design.hse.ru/">
+                <img src="Forgebyte_logo.png" alt="Логотип">
+            </a>
+        </div>
+
+        <!-- БУРГЕР -->
+        <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- НАВИГАЦИЯ -->
+        <nav class="main-nav">
+            <a href="index.html" >Главная</a>
+            <a href="shop.html" class="active" >Магазин</a>
+            <a href="form.html">Форма</a>
+            
+        </nav>
+
+    </div>
+</header>
+
+  <main class="container">
+    <section>
+      <h1>Коллекционные наборы Forgebyte</h1>
+      <p>
+
+        Наши наборы — это не просто мерч. Это конструкторы мира, где каждая деталь создана вручную и проходит
+        многоэтапную обработку.
+      <ul> <li>
+         Набор «Клинок Пустошей»
+
+        Мини-диорама с полуразрушенным городским кварталом, фигуркой рейдера и стилизованным светящимся клинком.
+        Подойдёт фанатам постапокалиптических RPG.</li>
+
+        <li> Набор «Цитадель Архимага»
+
+        Коллекционный магический стол с атрибутами: кристаллы, книги, мини-портал и фигурка архимага.
+        Бонус: светодиодная подсветка.</li>
+
+         <li> Набор «Призрачный отряд»
+
+        Тактический набор для любителей шутеров. Включает фигурки бойцов разных классов, дрон и набор сменных
+        аксессуаров.
+
+        Каждый комплект поставляется в фирменной коробке Forgebyte и имеет уникальный серийный номер.</li>
+      </ul>
+      </p>
+    </section>
+    <section>
+      <div id="products" class="products"></div>
+
+      <form id="orderForm" action="https://www.ya.ru" method="GET" target="_blank"></form>
+
+      <button id="buyBtn" class="buy-btn">Купить</button>
+    </section>
+  </main>
+
+  
+  
+  <footer>
+    <p>Forgebyte©</p>
+     <a href="https://github.com/walliesent" target="_blank">GitHub</a>
+     <a href="https://github.com/walliesent" target="_blank">
+     <img src="github.png" alt="github" class="footerLogo"> 
+     </a>
+</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <header class="header container" id="sect0">
+    <div class="header__inner">
+
+        <!-- ЛОГОТИП -->
+        <div class="logo">
+            <a href="https://design.hse.ru/">
+                <img src="Forgebyte_logo.png" alt="Логотип">
+            </a>
+        </div>
+
+        <!-- БУРГЕР -->
+        <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- НАВИГАЦИЯ -->
+        <nav class="main-nav">
+            <a href="index.html" >Главная</a>
+            <a href="shop.html">Магазин</a>
+            <a href="form.html" class="active">Форма</a>
+            
+        </nav>
+
+    </div>
+</header>
+
+     <main class="container">
+
+<figure> <img src="trees.jpg" alt="картинка">
+<figcaption>Набор по «Властелину колец»</figcaption></figure>
+    <div class="form-container">
+        <h2>Опрос: откуда вы узнали о компании?</h2>
+         <form action="https://www.ya.ru" id="UserEnter" name="UserEnter" target="_blank">
+           
+            <div class="form-group">
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName" value="Иванов" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" name="firstName" value="Иван" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="middleName">Отчество:</label>
+                <input type="text" id="middleName" name="middleName" value="Иванович" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthYear">Год рождения:</label>
+                <input type="number" id="birthYear" name="birthYear" min="1900" max="2024" required>
+            </div>
+            
+              <div class="form-group">
+                <label for="number"> Номер телефона:</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label>Пол:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Женский
+                    </label>
+                </div>
+            </div>
+            
+           
+            <div class="form-group">
+                <label>Откуда вы о нас узнали?:</label>
+                <div class="flex-container">
+                    <label class="flex-item">
+                        <input type="checkbox" name="interests" value="sports">
+                      Соц.сети
+                    </label>
+                    <label class="flex-item">
+                        <input type="checkbox" name="interests" value="music">
+                        Друзья
+                    </label>
+                    <label class="flex-item">
+                        <input type="checkbox" name="interests" value="books">
+                    Реклама в интернете
+                    </label>
+                    <label class="flex-item">
+                        <input type="checkbox" name="interests" value="travel">
+                        Реклама на улице
+                    </label>
+                    <label class="flex-item">
+                        <input type="checkbox" name="interests" value="technology">
+                        Семья
+                    </label>
+                </div>
+            </div>
+            
+           
+            <div class="form-group">
+                <label for="comments">Другое:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Введите дополнительную информацию..."></textarea>
+            </div>
+            
+            
+             <button type="Submit" name="submit"  value="Отправить">Отправить</button>
+        </form>
+        </main>
+
+  
+   
+
+ 
+  <footer>
+    <p>Forgebyte©</p>
+     <a href="https://github.com/walliesent" target="_blank">GitHub</a>
+     <a href="https://github.com/walliesent" target="_blank">
+     <img src="github.png" alt="github" class="footerLogo"> 
+     </a>
+</footer>
+   <script src="script.js"></script>
+</body>
+</html>
